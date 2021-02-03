@@ -14,16 +14,16 @@
 1. 모듈 설치
 
 ```shell
-npm i re-korean-numeral
+npm i @greenlabs/re-korean-numeral
 or
-yarn add re-korean-numeral
+yarn add @greenlabs/re-korean-numeral
 ```
 
 2. `bsconfig.json` 의존성 추가하기
 
 ```json
 "bs-dependencies": [
-  "re-korean-numeral"
+  "@greenlabs/re-korean-numeral"
 ]
 ```
 
@@ -32,21 +32,21 @@ yarn add re-korean-numeral
 1. `fromInt`
 
 ```reason
-NumToKorean.fromInt(1234, ())
+KoreanNumeric.fromInt(1234, ())
 // 1,234
 ```
 
 2. `fromFloat`
 
 ```reason
-NumToKorean.fromFloat(1234567890.1, ~drop=1, ())
+KoreanNumeric.fromFloat(1234567890.1, ~drop=1, ())
 // 12억 3,456만
 ```
 
 3. `fromString`
 
 ```reason
-NumToKorean.fromString("1234567890987654321", ~drop=1, ())
+KoreanNumeric.fromString("1234567890987654321", ~drop=1, ())
 // 123경 4,567조 8,909억 8,765만
 ```
 
