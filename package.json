@@ -1,0 +1,30 @@
+{
+  "name": "bs-num-to-kor",
+  "version": "0.1.0",
+  "description": "ReScript module to convert the number to Korean",
+  "scripts": {
+    "re:watch": "bsb -make-world -w",
+    "re:build": "bsb -make-world",
+    "re:clean": "bsb -clean-world",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/green-labs/bs-num-to-kor.git"
+  },
+  "keywords": [
+    "ReScript",
+    "ReasonML",
+    "BuckleScript"
+  ],
+  "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/green-labs/bs-num-to-kor/issues"
+  },
+  "homepage": "https://github.com/green-labs/bs-num-to-kor#readme",
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.6.0",
+    "bs-platform": "^8.4.2"
+  }
+}

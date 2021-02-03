@@ -1,0 +1,14 @@
+yarn.lock
+
+# common
+.DS_Store
+node_modules
+logs/
+*.log
+../.idea
+
+# ocaml, reason
+lib
+.bsb.lock
+.merlin
+*.bs.js
