@@ -1,5 +1,5 @@
 {
-  "name": "bs-num-to-kor",
+  "name": "re-korean-numeral",
   "bsc-flags": [
     "-bs-super-errors"
   ],

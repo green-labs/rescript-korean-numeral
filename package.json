@@ -1,5 +1,5 @@
 {
-  "name": "bs-num-to-kor",
+  "name": "re-korean-numeral",
   "version": "0.1.0",
   "description": "ReScript module to convert the number to Korean",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/green-labs/bs-num-to-kor.git"
+    "url": "git+https://github.com/green-labs/re-korean-numeral.git"
   },
   "keywords": [
     "ReScript",
@@ -20,9 +20,9 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/green-labs/bs-num-to-kor/issues"
+    "url": "https://github.com/green-labs/re-korean-numeral/issues"
   },
-  "homepage": "https://github.com/green-labs/bs-num-to-kor#readme",
+  "homepage": "https://github.com/green-labs/re-korean-numeral#readme",
   "devDependencies": {
     "@glennsl/bs-jest": "^0.6.0",
     "bs-platform": "^8.4.2"

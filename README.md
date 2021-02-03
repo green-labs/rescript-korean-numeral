@@ -1,6 +1,6 @@
-# bs-num-to-kor
+# re-korean-numeral
 
-`bs-num-to-kor`은 숫자를 한글 숫자로 변환해주는 리스트립트(ReScript) 모듈 입니다.
+`re-korean-numeral`은 숫자를 한글 숫자로 변환해주는 리스트립트(ReScript) 모듈 입니다.
 
 ### 예
 ```
@@ -14,16 +14,16 @@
 1. 모듈 설치
 
 ```shell
-npm i bs-num-to-kor
+npm i re-korean-numeral
 or
-yarn add bs-num-to-kor
+yarn add re-korean-numeral
 ```
 
 2. `bsconfig.json` 의존성 추가하기
 
 ```json
 "bs-dependencies": [
-  "bs-num-to-kor"
+  "re-korean-numeral"
 ]
 ```
 
