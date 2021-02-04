@@ -1,5 +1,5 @@
 {
-  "name": "re-korean-numeral",
+  "name": "@greenlabs/re-korean-numeral",
   "bsc-flags": [
     "-bs-super-errors"
   ],
