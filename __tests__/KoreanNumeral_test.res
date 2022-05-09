@@ -57,42 +57,49 @@ describe(`1만 이하는 절삭`, () => {
 describe(`작은 단위 표시`, () => {
   open Expect
 
-  test(`KoreanNumeral.fromInt`, () => {
+  test(`1234 => 1천2백3십4`, () => {
     let result = KoreanNumeral.AllUnitsInKorean.fromInt(1234, ())
     expect(result) |> toBe(`1천2백3십4`)
   })
-  test(`KoreanNumeral.fromFloat`, () => {
+  test(`204 => 2백4`, () => {
+    let result = KoreanNumeral.AllUnitsInKorean.fromInt(204, ())
+    expect(result) |> toBe(`2백4`)
+  })
+  test(`152212525110.0 => 1천5백2십2억 1천2백5십2만 5천1백1십`, () => {
     let result = KoreanNumeral.AllUnitsInKorean.fromFloat(152212525110.0, ())
     expect(result) |> toBe(`1천5백2십2억 1천2백5십2만 5천1백1십`)
   })
-  test(`KoreanNumeral.fromInt64`, () => {
-    let result = KoreanNumeral.AllUnitsInKorean.fromInt64(
-      Int64.of_string("1234567890987654321"),
-      (),
-    )
-    expect(
-      result,
-    ) |> toBe(`1백2십3경 4천5백6십7조 8천9백9억 8천7백6십5만 4천3백2십1`)
-  })
+  test(
+    `1234567890987654321 => 1백2십3경 4천5백6십7조 8천9백9억 8천7백6십5만 4천3백2십1`,
+    () => {
+      let result = KoreanNumeral.AllUnitsInKorean.fromInt64(
+        Int64.of_string("1234567890987654321"),
+        (),
+      )
+      expect(
+        result,
+      ) |> toBe(`1백2십3경 4천5백6십7조 8천9백9억 8천7백6십5만 4천3백2십1`)
+    },
+  )
 })
 
 describe(`작은 단위 표시 1만 이하 절삭`, () => {
   open Expect
 
-  test(`KoreanNumeral.fromInt`, () => {
+  test(`1234 => ""`, () => {
     let result = KoreanNumeral.AllUnitsInKorean.fromInt(1234, ~drop=1, ())
     expect(result) |> toBe(``)
   })
-  test(`KoreanNumeral.fromFloat`, () => {
+  test(`152212525110.0 => 1천5백2십2억 1천2백5십2만`, () => {
     let result = KoreanNumeral.AllUnitsInKorean.fromFloat(152212525110.0, ~drop=1, ())
     expect(result) |> toBe(`1천5백2십2억 1천2백5십2만`)
   })
-  test(`KoreanNumeral.fromInt64`, () => {
+  test(`1234567890987654321 => 1백2십3경 4천5백6십7조 9백9억 8천6십5만`, () => {
     let result = KoreanNumeral.AllUnitsInKorean.fromInt64(
-      Int64.of_string("1234567890987654321"),
+      Int64.of_string("1234567090980654321"),
       ~drop=1,
       (),
     )
-    expect(result) |> toBe(`1백2십3경 4천5백6십7조 8천9백9억 8천7백6십5만`)
+    expect(result) |> toBe(`1백2십3경 4천5백6십7조 9백9억 8천6십5만`)
   })
 })
