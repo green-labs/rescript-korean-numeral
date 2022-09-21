@@ -1,5 +1,8 @@
 # rescript-korean-numeral
 
+> `@greenlabs/re-korean-numeral`은 deprecated 되었습니다.
+> 새로운 패키지명 `@greenlabs/rescript-korean-numeral`을 이용해서 설치해주세요.
+
 `rescript-korean-numeral`은 숫자를 한글 숫자로 변환해주는 리스트립트(ReScript) 모듈 입니다.
 
 ### 예
