@@ -1,8 +1,9 @@
-# re-korean-numeral
+# rescript-korean-numeral
 
-`re-korean-numeral`은 숫자를 한글 숫자로 변환해주는 리스트립트(ReScript) 모듈 입니다.
+`rescript-korean-numeral`은 숫자를 한글 숫자로 변환해주는 리스트립트(ReScript) 모듈 입니다.
 
 ### 예
+
 ```
 1234 -> 1,234
 1234567890 -> 12억 3,456만 7,890
@@ -14,16 +15,16 @@
 1. 모듈 설치
 
 ```shell
-npm i @greenlabs/re-korean-numeral
+npm i @greenlabs/rescript-korean-numeral
 or
-yarn add @greenlabs/re-korean-numeral
+yarn add @greenlabs/rescript-korean-numeral
 ```
 
 2. `bsconfig.json` 의존성 추가하기
 
 ```json
 "bs-dependencies": [
-  "@greenlabs/re-korean-numeral"
+  "@greenlabs/rescript-korean-numeral"
 ]
 ```
 

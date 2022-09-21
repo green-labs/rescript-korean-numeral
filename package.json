@@ -1,16 +1,16 @@
 {
-  "name": "@greenlabs/re-korean-numeral",
-  "version": "0.1.2",
+  "name": "@greenlabs/rescript-korean-numeral",
+  "version": "0.2.0",
   "description": "ReScript module to convert the number to Korean",
   "scripts": {
-    "re:watch": "bsb -make-world -w",
-    "re:build": "bsb -make-world",
-    "re:clean": "bsb -clean-world",
+    "start": "rescript build -w",
+    "build": "rescript build -with-deps",
+    "clean": "rescript clean",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/green-labs/re-korean-numeral.git"
+    "url": "git+https://github.com/green-labs/rescript-korean-numeral.git"
   },
   "keywords": [
     "ReScript",
@@ -20,11 +20,14 @@
   "author": "Greenlabs Dev <developer@greenlabs.co.kr>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/green-labs/re-korean-numeral/issues"
+    "url": "https://github.com/green-labs/rescript-korean-numeral/issues"
   },
-  "homepage": "https://github.com/green-labs/re-korean-numeral#readme",
+  "homepage": "https://github.com/green-labs/rescript-korean-numeral#readme",
   "devDependencies": {
     "@glennsl/bs-jest": "^0.6.0",
-    "bs-platform": "^8.4.2"
+    "rescript": "^10"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.24.4"
   }
 }

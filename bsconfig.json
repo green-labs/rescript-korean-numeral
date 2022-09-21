@@ -1,5 +1,5 @@
 {
-  "name": "@greenlabs/re-korean-numeral",
+  "name": "@greenlabs/rescript-korean-numeral",
   "bsc-flags": [
     "-bs-super-errors"
   ],
