@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-korean-numeral",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "ReScript module to convert the number to Korean",
   "scripts": {
     "start": "rescript build -w",
@@ -24,10 +24,7 @@
   },
   "homepage": "https://github.com/green-labs/rescript-korean-numeral#readme",
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.6.0",
-    "rescript": "^10"
-  },
-  "dependencies": {
-    "@changesets/cli": "^2.24.4"
+    "@glennsl/rescript-jest": "^0.10.0",
+    "rescript": "^11"
   }
 }
