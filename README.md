@@ -1,5 +1,7 @@
 # rescript-korean-numeral
 
+[![npm version](https://img.shields.io/npm/v/@greenlabs/rescript-korean-numeral.svg)](https://www.npmjs.com/package/@greenlabs/rescript-korean-numeral)
+
 > `@greenlabs/re-korean-numeral`은 deprecated 되었습니다.
 > 새로운 패키지명 `@greenlabs/rescript-korean-numeral`을 이용해서 설치해주세요.
 
