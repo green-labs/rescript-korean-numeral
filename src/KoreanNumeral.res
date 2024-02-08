@@ -1,4 +1,4 @@
-@bs.send external toLocaleString: (int, string) => string = "toLocaleString"
+@send external toLocaleString: (int, string) => string = "toLocaleString"
 
 open Belt
 
@@ -20,7 +20,7 @@ let fromInt64 = (num, ~drop=0, ()) => {
   ->List.keep(i => i != "")
   ->List.reverse
   ->List.toArray
-  ->Js.Array.joinWith(" ", _)
+  ->(Js.Array.joinWith(" ", _))
 }
 
 let fromInt = (num, ~drop=0, ()) => {
