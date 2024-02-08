@@ -1,6 +1,6 @@
 {
   "name": "@greenlabs/rescript-korean-numeral",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "ReScript module to convert the number to Korean",
   "scripts": {
     "start": "rescript build -w",
