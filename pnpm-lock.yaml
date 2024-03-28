@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^29.7.0
     version: 29.7.0
   rescript:
-    specifier: ^11
-    version: 11.0.1
+    specifier: 11.1.0-rc.6
+    version: 11.1.0-rc.6
 
 packages:
 
@@ -3007,8 +3007,8 @@ packages:
     resolution: {integrity: sha512-KigOCHcocU3XODJxsu8i/j8T9tzT4adHiecwORRQ0ZZFcp7ahwXuRU1m+yuO90C5ZUyGeGfocHDI14M3L3yDAQ==}
     dev: true
 
-  /rescript@11.0.1:
-    resolution: {integrity: sha512-7T4PRp/d0+CBNnY6PYKffFqo9tGZlvnZpboF/n+8SKS+JZ6VvXJO7W538VPZXf3EYx1COGAWWvkF9e/HgSAqHg==}
+  /rescript@11.1.0-rc.6:
+    resolution: {integrity: sha512-chaNkU5xvWC+NOKflmNiQDMj8wu1Vk+SX9vUH84m9gT9cGE49ml1rG25XUPlKQ4EJ+AR+0XYLfxxvzjKYC+qvQ==}
     engines: {node: '>=10'}
     hasBin: true
     requiresBuild: true
