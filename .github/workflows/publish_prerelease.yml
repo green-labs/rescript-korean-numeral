@@ -1,0 +1,38 @@
+name: publish prerelease
+
+on: [workflow_dispatch]
+
+jobs:
+  build_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup-engines
+
+      - name: Build
+        run: pnpm build
+
+      - name: Test
+        run: pnpm test
+
+  publish:
+    needs: [build_test]
+    name: (only on release) Publish (pre-release)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/setup-engines
+
+      - name: Pack package
+        if: success()
+        run: npm pack
+
+      - name: Publish
+        if: success()
+        run: npm publish --tag next
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
