@@ -9,7 +9,7 @@ runs:
         node-version: 20
         registry-url: "https://registry.npmjs.org"
 
-    - uses: pnpm/action-setup@v2
+    - uses: pnpm/action-setup@v3
       name: Install pnpm
       with:
         version: 8
