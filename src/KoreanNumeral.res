@@ -1,8 +1,25 @@
-@send external toLocaleString: (int, string) => string = "toLocaleString"
-
 open Belt
 
-let unitsInKorean = list{``, `만`, `억`, `조`, `경`}
+let unitsInKorean = list{
+  "",
+  "만",
+  "억",
+  "조",
+  "경",
+  "해",
+  "자",
+  "양",
+  "구",
+  "간",
+  "정",
+  "재",
+  "극",
+  "항하사",
+  "아승기",
+  "나유타",
+  "불가사의",
+  "무량대수",
+}
 let mann = 10000n
 
 let rec split = divided => {
