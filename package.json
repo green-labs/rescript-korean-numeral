@@ -25,6 +25,7 @@
   "homepage": "https://github.com/green-labs/rescript-korean-numeral#readme",
   "devDependencies": {
     "@glennsl/rescript-jest": "^0.10.0",
+    "jest": "^29.7.0",
     "rescript": "^11"
   }
 }
