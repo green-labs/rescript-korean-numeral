@@ -1,25 +1,24 @@
 {
   "name": "@greenlabs/rescript-korean-numeral",
-  "bsc-flags": [
-    "-bs-super-errors"
-  ],
   "sources": [
     {
       "dir": "src"
     },
     {
-      "dir": "__tests__",
-      "type": "dev"
+      "dir": "test",
+      "type": "dev",
+      "subdirs": true
     }
   ],
   "package-specs": [
     {
-      "module": "commonjs",
+      "module": "esmodule",
       "in-source": true
     }
   ],
-  "suffix": ".bs.js",
+  "suffix": ".mjs",
   "bs-dev-dependencies": [
-    "@glennsl/rescript-jest"
-  ]
+    "@dusty-phillips/rescript-zora"
+  ],
+  "bsc-flags": []
 }

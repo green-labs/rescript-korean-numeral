@@ -13,10 +13,10 @@ jobs:
       - uses: ./.github/actions/setup-engines
 
       - name: Build
-        run: pnpm build
+        run: pnpm run res:build
 
       - name: Test
-        run: pnpm test
+        run: pnpm run test
 
   publish:
     needs: [build_test]
