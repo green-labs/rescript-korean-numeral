@@ -49,7 +49,7 @@ let fromInt = (num, ~drop=0) => {
 }
 
 let fromFloat = (num, ~drop=0) => {
-  num->ceil->Float.toString->Js.BigInt.fromStringExn->fromBigInt(~drop)
+  num->Math.ceil->Float.toString->Js.BigInt.fromStringExn->fromBigInt(~drop)
 }
 
 let fromString = (num, ~drop=0) => {
