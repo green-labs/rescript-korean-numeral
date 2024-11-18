@@ -1,5 +1,10 @@
 # @greenlabs/rescript-korean-numeral
 
+## 0.5.0
+
+- ReScript v12 지원
+- 테스트 러너 변경: Jest -> Zora
+
 ## 0.4.0
 
 ### Breaking Changes
